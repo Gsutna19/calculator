@@ -1,7 +1,59 @@
+button {
+    font-size: 32px;
+}
+
 h1 {
     color: blue;
 }
 
 .red {
     color: red;
+}
+
+div {
+    border: 4px solid black;
+}
+
+#calculator {
+    width: 372px;
+    /* height: 604px; */
+    display: grid;
+    /* grid-template-columns: repeat(4, 72px); */
+    grid-template-rows: repeat(6, 72px);
+    gap: 8px;
+    padding: 8px;
+
+}
+
+#display {
+    border: 1px solid black;
+    width: auto;
+    padding: 8px;
+    grid-column: 1/5;
+    grid-row: 1/1;
+}
+
+.top {
+    margin: 8px 0;
+}
+
+.right {
+    margin-left: 12px;
+}
+
+.bottom {
+    margin-bottom: 8px;
+}
+
+#clear {
+    grid-column: 1/3;
+    margin-top: 8px;
+}
+
+#divide {
+    margin: 8px 0 0 12px;
+}
+
+#equals {
+    grid-column: 3/5;
 }
