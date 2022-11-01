@@ -76,16 +76,30 @@ function empty() {
 // Performs operations
 function operate(sign) {
 
-    let x = document.getElementById("display").textContent;
-    console.log(x);
+    let display = document.getElementById("display");
 
-    document.getElementById("display").textContent = "";
+    let x = display.textContent;
+    console.log(sign.value);
+
+    display.textContent = "";
+
+    let y = "";
+
+
+    // while (y == "") {
+    //     y = display.textContent;
+    //     console.log(y);
+    // }
+
+    
+
+    // let y = document.getElementById("display").textContent;
 
     // let x = prompt("First value: ");
     // let sign = prompt("+, -, *, or /");
     // let y = prompt("Second value: ");
 
-    switch (sign) {
+    switch (sign.value) {
         case "+":
             console.log(add(x,y));
             break;
@@ -98,6 +112,8 @@ function operate(sign) {
         case "/":
             console.log(divide(x,y));
             break;
+        // case "=":
+        //     console.log();
     }
 }
 
