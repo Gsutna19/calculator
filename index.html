@@ -12,24 +12,24 @@
 
     <div id="calculator">
         <div id="display"></div>
-        <button type="button" class="top" id="clear">Clear</button>
-        <button type="button" class="top" >	&#8592;</button>
-        <button type="button" id="divide" class="top right" >&divide;</button>
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button" class="right">&times;</button>
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button" class="right">&minus;</button>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button" class="right">&plus;</button>
-        <button type="button" class="bottom">.</button>
-        <button type="button" class="bottom">0</button>
-        <button type="button" class="bottom" id="equals">=</button>
+        <button type="button" onclick="empty()" class="top" id="clear">Clear</button>
+        <button type="button" onclick="erase()" class="top">&#8592;</button>
+        <button type="button" value="/"  onclick="operate(this)" id="divide" class="top right" >&divide;</button>
+        <button type="button" value="7" onclick="displayNum(this)" >7</button>
+        <button type="button" value="8" onclick="displayNum(this)" >8</button>
+        <button type="button" value="9" onclick="displayNum(this)" >9</button>
+        <button type="button" value="*"  onclick="operate(this)"class="right">&times;</button>
+        <button type="button" value="4" onclick="displayNum(this)">4</button>
+        <button type="button" value="5" onclick="displayNum(this)">5</button>
+        <button type="button" value="6" onclick="displayNum(this)">6</button>
+        <button type="button" value="-"  onclick="operate(this)"class="right">&minus;</button>
+        <button type="button" value="1" onclick="displayNum(this)">1</button>
+        <button type="button" value="2" onclick="displayNum(this)">2</button>
+        <button type="button" value="3" onclick="displayNum(this)">3</button>
+        <button type="button" value="+"  onclick="operate(this)"class="right">&plus;</button>
+        <button type="button" value="."  onclick="displayNum(this)"class="bottom">.</button>
+        <button type="button" value="0" onclick="displayNum(this)" class="bottom">0</button>
+        <button type="button" value=""  onclick="operate()"class="bottom" id="equals">=</button>
     </div>
 
 
