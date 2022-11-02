@@ -144,19 +144,19 @@ function operate(sign) {
     if (text.length >= 3 && text[1] == "+") {
         console.log(add(x,y));
         secondNum = add(x,y);
-        display.textContent = secondNum;
+        display.textContent = parseFloat(secondNum).toFixed(2);
     } else if (text.length >= 3 && text[1] == "-") {
         console.log(subtract(x,y));
         secondNum = subtract(x,y);
-        display.textContent = secondNum;
+        display.textContent = parseFloat(secondNum).toFixed(2);
     } else if (text.length >= 3 && text[1] == "*") {
         console.log(multiply(x,y));
         secondNum = multiply(x,y);
-        display.textContent = secondNum;
+        display.textContent = parseFloat(secondNum).toFixed(2);
     } else if (text.length >= 3 && text[1] == "/") {
         console.log(divide(x,y));
         secondNum = divide(x,y);
-        display.textContent = secondNum;
+        display.textContent = parseFloat(secondNum).toFixed(2);
     }
     
     // If last sign pressed is not "equal sign" save it in newSign;
