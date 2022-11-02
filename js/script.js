@@ -79,11 +79,6 @@ function empty() {
     document.getElementById("display").textContent = "";
     emptyArray();
     isDecimal(false);
-    // let output = document.getElementById("display");
-    // console.log(output);
-    // while(output.firstChild){
-    //     output.removeChild(output.firstChild);
-    // }
 }
 
 function emptyArray() {
@@ -114,9 +109,6 @@ function addToArray() {
         };
     };
 
-    // if (!isNaN(text[1])) {
-    //     text.splice(1, 1);
-    // }
     if (i === text.length) {
         text.push(floatDisplay);
     }
@@ -145,8 +137,6 @@ function operate(sign) {
     console.log(text[1]);
     console.log(text[2]);
     
-    // console.log(text.length);
-
     let x = text[0];
     
     let y = text[2];
@@ -169,15 +159,12 @@ function operate(sign) {
         display.textContent = secondNum;
     }
     
-    // console.log(text[3]);
-
     // If last sign pressed is not "equal sign" save it in newSign;
     let newSign;
     if (text[3] == "=") {
         if(secondNum % 1 != 0) {
             display.textContent = parseFloat(secondNum).toFixed(2);
         } else {
-            // console.log(secondNum);
             display.textContent = secondNum;
         }
     } else if (text[3] == "+") {
@@ -199,8 +186,6 @@ function operate(sign) {
 
     // Replace contents of array with new content.
     if (text.length >= 3) {
-        // text[0] = secondNum;
-        // console.log(text[0]);
         emptyArray();
         text[0] = secondNum;
         text[1] = newSign;
@@ -212,30 +197,3 @@ function operate(sign) {
 
     isDecimal(false);
 }
-
-// displayNum(secondNum);
-
-// function calculate() {
-
-
-
-//     switch (sign.value) {
-//         case "+":
-//             console.log(add(x,y));
-//             break;
-//         case "-":
-//             console.log(subtract(x,y));
-//             break;
-//         case "*":
-//             console.log(multiply(x,y));
-//             break;
-//         case "/":
-//             console.log(divide(x,y));
-//             break;
-//         // case "=":
-//         //     console.log();
-//     }
-// }
-
-// operate();
-
